@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islami_c16/core/resources/ColorManager.dart';
 import 'package:islami_c16/core/resources/RoutesManager.dart';
 import 'package:islami_c16/ui/home/screen/home_screen.dart';
+import 'package:islami_c16/ui/quran_details/screen/quran_details_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
         )
       ),
       routes: {
-        RoutesManager.homeRoute:(context) => HomeScreen()
+        RoutesManager.homeRoute:(context) => HomeScreen(),
+        RoutesManager.quranRoute:(context)=>QuranDetailsScreen()
       },
       initialRoute:RoutesManager.homeRoute ,
     );
