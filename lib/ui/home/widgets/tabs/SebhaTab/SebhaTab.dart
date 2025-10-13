@@ -105,7 +105,7 @@ class _SebhaTabState extends State<SebhaTab> {
                           style: TextStyle(
                             fontSize: 40,
                             fontWeight: FontWeight.w700,
-                            color: ColorManager.whiteColor,
+                            color: Colors.white,
                           ),
                         ),
                       ],
