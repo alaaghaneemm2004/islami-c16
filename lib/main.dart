@@ -4,6 +4,8 @@ import 'package:islami_c16/core/resources/RoutesManager.dart';
 import 'package:islami_c16/ui/home/screen/home_screen.dart';
 import 'package:islami_c16/ui/quran_details/screen/quran_details_screen.dart';
 
+import 'onBoarding/on boarding.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -30,9 +32,11 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         RoutesManager.homeRoute:(context) => HomeScreen(),
-        RoutesManager.quranRoute:(context)=>QuranDetailsScreen()
+        RoutesManager.quranRoute:(context)=>QuranDetailsScreen(),
+        RoutesManager.onBorading:(context)=>obBoarding()
+
       },
-      initialRoute:RoutesManager.homeRoute ,
+      initialRoute:RoutesManager.onBorading ,
     );
   }
 }
